@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>783</width>
+    <height>597</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Головна сторінка</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>771</width>
+      <height>501</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="title">
+        <string>Почати роботу</string>
+       </property>
+       <widget class="QLabel" name="label">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>40</y>
+          <width>351</width>
+          <height>201</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>351</width>
+          <height>201</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>40</y>
+          <width>258</width>
+          <height>191</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QPushButton" name="pushButton_createNewDb">
+             <property name="styleSheet">
+              <string notr="true"/>
+             </property>
+             <property name="text">
+              <string>Створити нове підприємство</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_generalView">
+             <property name="text">
+              <string>Загальний вигляд</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>400</y>
+          <width>731</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>731</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="title">
+         <string>Поле для нотаток</string>
+        </property>
+        <widget class="QTextEdit" name="commentSpace">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>30</y>
+           <width>711</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>731</width>
+           <height>61</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_2">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>290</y>
+          <width>721</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Cambria</family>
+          <pointsize>48</pointsize>
+          <italic>true</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="mouseTracking">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: rgb(120, 120, 120);
+qlineargradient:(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="lineWidth">
+         <number>4</number>
+        </property>
+        <property name="midLineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>Asset Tracker</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::AutoText</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>783</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action_new"/>
+    <addaction name="action_open"/>
+    <addaction name="separator"/>
+    <addaction name="action_saveAs"/>
+    <addaction name="action_print"/>
+    <addaction name="separator"/>
+    <addaction name="separator"/>
+    <addaction name="action_quit"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Немат.активи\основні зас.</string>
+    </property>
+    <addaction name="action_nmActives"/>
+    <addaction name="action_amActive"/>
+    <addaction name="separator"/>
+    <addaction name="action_fixedAss"/>
+    <addaction name="action_amFixedAss"/>
+    <addaction name="separator"/>
+    <addaction name="action_generalView"/>
+    <addaction name="separator"/>
+    <addaction name="action_Wiki"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>Про нас</string>
+    </property>
+    <addaction name="action_aboutQt"/>
+    <addaction name="separator"/>
+    <addaction name="action_aboutAuth"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>Редагуваня</string>
+    </property>
+    <addaction name="action_copy"/>
+    <addaction name="action_cut"/>
+    <addaction name="action_paste"/>
+    <addaction name="action_undo"/>
+    <addaction name="action_redo"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>Звіти</string>
+    </property>
+    <addaction name="action_generateAssetsReport"/>
+    <addaction name="action_generateDepreciationReport"/>
+    <addaction name="action_generateMoveReport"/>
+    <addaction name="action_generateInventoryReport"/>
+    <addaction name="action_generateCategoryReport"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_copy"/>
+   <addaction name="separator"/>
+   <addaction name="action_paste"/>
+   <addaction name="separator"/>
+   <addaction name="action_cut"/>
+   <addaction name="separator"/>
+   <addaction name="action_undo"/>
+   <addaction name="separator"/>
+   <addaction name="action_redo"/>
+  </widget>
+  <action name="action_new">
+   <property name="text">
+    <string>Створити</string>
+   </property>
+  </action>
+  <action name="action_open">
+   <property name="text">
+    <string>Відкрити</string>
+   </property>
+  </action>
+  <action name="action_print">
+   <property name="text">
+    <string>Друк</string>
+   </property>
+  </action>
+  <action name="action_quit">
+   <property name="text">
+    <string>Вийти</string>
+   </property>
+  </action>
+  <action name="action_nmActives">
+   <property name="text">
+    <string>Немат.активи</string>
+   </property>
+  </action>
+  <action name="action_amActive">
+   <property name="text">
+    <string>Амортизація немат. активів</string>
+   </property>
+  </action>
+  <action name="action_fixedAss">
+   <property name="text">
+    <string>Основні засоби</string>
+   </property>
+  </action>
+  <action name="action_amFixedAss">
+   <property name="text">
+    <string>Амортизація основних засобів</string>
+   </property>
+  </action>
+  <action name="action_generalView">
+   <property name="text">
+    <string>Загальний вигляд обліку</string>
+   </property>
+  </action>
+  <action name="action_Wiki">
+   <property name="text">
+    <string>Довідник</string>
+   </property>
+  </action>
+  <action name="action_aboutQt">
+   <property name="text">
+    <string>Про Qt</string>
+   </property>
+  </action>
+  <action name="action_aboutAuth">
+   <property name="text">
+    <string>Про автора</string>
+   </property>
+  </action>
+  <action name="action_copy">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/img/copy_img.png</normaloff>:/img/copy_img.png</iconset>
+   </property>
+   <property name="text">
+    <string>Копіювати</string>
+   </property>
+  </action>
+  <action name="action_cut">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/img/cut_img.jpg</normaloff>:/img/cut_img.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Вирізати</string>
+   </property>
+  </action>
+  <action name="action_undo">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/img/undo_icon.png</normaloff>:/img/undo_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+  </action>
+  <action name="action_redo">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/img/redo_icon.png</normaloff>:/img/redo_icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+  </action>
+  <action name="action_paste">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/img/paste_img.png</normaloff>:/img/paste_img.png</iconset>
+   </property>
+   <property name="text">
+    <string>Вставити</string>
+   </property>
+  </action>
+  <action name="action_saveAs">
+   <property name="text">
+    <string>Зберегти як</string>
+   </property>
+  </action>
+  <action name="action_generateAssetsReport">
+   <property name="text">
+    <string>Звіт про активи</string>
+   </property>
+  </action>
+  <action name="action_generateDepreciationReport">
+   <property name="text">
+    <string>Звіт про амортизацію</string>
+   </property>
+  </action>
+  <action name="action_generateMoveReport">
+   <property name="text">
+    <string>Звіт про рух активів</string>
+   </property>
+  </action>
+  <action name="action_generateInventoryReport">
+   <property name="text">
+    <string>Звіт по інвентаному номеру</string>
+   </property>
+  </action>
+  <action name="action_generateCategoryReport">
+   <property name="text">
+    <string>Звіт по категоріям активів</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

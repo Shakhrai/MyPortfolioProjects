@@ -1,0 +1,17 @@
+debug/authomation.o
+debug/editactive.o
+debug/editauthomation.o
+debug/generatereport.o
+debug/main.o
+debug/mainwindow.o
+debug/nonematerialactives.o
+debug/tablepage.o
+debug/qrc_resources.o
+debug/moc_authomation.o
+debug/moc_dbcreate.o
+debug/moc_editactive.o
+debug/moc_editauthomation.o
+debug/moc_generatereport.o
+debug/moc_mainwindow.o
+debug/moc_nonematerialactives.o
+debug/moc_tablepage.o

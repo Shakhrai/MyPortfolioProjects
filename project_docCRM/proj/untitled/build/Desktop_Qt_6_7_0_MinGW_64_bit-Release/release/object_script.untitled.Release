@@ -1,0 +1,17 @@
+release/authomation.o
+release/editactive.o
+release/editauthomation.o
+release/generatereport.o
+release/main.o
+release/mainwindow.o
+release/nonematerialactives.o
+release/tablepage.o
+release/qrc_resources.o
+release/moc_authomation.o
+release/moc_dbcreate.o
+release/moc_editactive.o
+release/moc_editauthomation.o
+release/moc_generatereport.o
+release/moc_mainwindow.o
+release/moc_nonematerialactives.o
+release/moc_tablepage.o

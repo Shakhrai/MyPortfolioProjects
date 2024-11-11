@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>img/image_blr_backgr.jpg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>img/copy_img.png</file>
+        <file>img/cut_img.jpg</file>
+        <file>img/paste_img.png</file>
+        <file>img/redo_icon.png</file>
+        <file>img/undo_icon.png</file>
+        <file>Diffnes.qss</file>
+    </qresource>
+</RCC>
