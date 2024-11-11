@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+    </head>
+    <body>
+         <header id="header" class="header">
+            <div class ="container">
+                <div class="nav_bar">
+                    <a href="/">
+                      <img src="{{url_for('static',filename = 'img/HousefrontBackLogoImg.jpg')}}"  alt="GreenVibe logo" style="width: 1920px; height: 700px; object-fit: cover; object-position: 50% 50%;">
+                    </a>
+                </div>
+            </div>
+         </header>
+        <section id="about" class="about">
+            <div class="column is-4 is-offset-4">
+    <h3 class="title">Sign Up</h3>
+    <div class="box">
+        <form method="POST" action="/signup">
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="email" name="email" placeholder="Email" autofocus="">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="text" name="name" placeholder="Name" autofocus="">
+                </div>
+            </div>
+
+            <div class="field">
+                <div class="control">
+                    <input class="input is-large" type="password" name="password" placeholder="Password">
+                </div>
+            </div>
+
+            <button class="button is-block is-info is-large is-fullwidth">Sign Up</button>
+        </form>
+    </div>
+</div>
+        </section>
+        <footer id="footer" class="footer">
+            <table style="width: 1920px;">
+                <tr>
+                    <td colspan="2" >
+                         <div class ="container">
+                           <h3>
+                                    GreenVibe is an Ukrainian hotel
+                                </h3>
+                                <h3>
+                                    ©  GreenVibe all rights reserved
+                                </h3>
+                                <h3>
+                                    grVibeukr@gmail.com
+                                </h3>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+        </footer>
+    </body>
+</html>
+

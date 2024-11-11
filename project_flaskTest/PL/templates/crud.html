@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    </head>
+    <body>
+         <header id="header" class="header">
+            <div class ="">
+                <div class="">
+                    <div >
+                        <a href="/">
+                             <img src="{{url_for('static',filename = 'img/HousefrontBackLogoImg.jpg')}}"  alt="GreenVibe logo" style="width: 1920px; height: 700px; object-fit: cover; object-position: 50% 50%;">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+         </header>
+        <section id="about" class="about">
+            <form method="post" style="margin-left: 100px ; margin-top: 20px">
+                <fieldset>
+                    <h2>Rooms</h2>
+                      <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>room_num</th>
+                                <th>room_place</th>
+                                <th>room_desc</th>
+                                <th>room_price</th>
+                                <th>is_reserved_room</th>
+                                <th>img_filename</th>
+                            </tr>
+                        </thead>
+                         <tbody>
+                         {%for el in data%}
+                         <tr>
+                             <td>{{el.id}}</td>
+                             <td>{{el.room_num}}</td>
+                             <td>{{el.room_place}}</td>
+                             <td>{{el.room_desc}}</td>
+                             <td>{{el.room_price}}</td>
+                             <td>{{el.is_reserved_room}}</td>
+                             <td>{{el.img_filename}}</td>
+                             <td>
+                                 <a href="/create" type="submit" class="btn btn-primary" id="myButton" style="margin-top: 20px">Create</a>
+                             </td>
+                              <td>
+                                 <a  href="/crud/{{el.id}}/update" type="submit" class="btn btn-primary" style="margin-top: 20px">Update</a>
+                             </td>
+                              <td>
+                                  <a href="/crud/{{el.id}}/delete" type="submit" class="btn btn-primary" style="margin-top: 20px">Delete</a>
+                             </td>
+
+                         </tr>
+                         {%endfor%}
+
+                        </tbody>
+                    </table>
+                </fieldset>
+            </form>
+        </section>
+        <footer id="footer" class="footer">
+            <table style="width: 1920px;">
+                <tr>
+                    <td colspan="2" >
+                         <div class ="container">
+                             <h1>
+                                 GreenVibe is an Ukrainian hotel
+                            </h1>
+                            <h1>
+                                 © GreenVibe all rights reserved
+                            </h1>
+                            <h1>
+                                 grVibeukr@gmail.com
+                            </h1>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </footer>
+    </body>
+</html>
+

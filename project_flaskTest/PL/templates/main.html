@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>GreenVibe</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}">
+    </head >
+    <body>
+        <header id="header" class="header">
+            <div class ="container">
+                <div class="nav_bar">
+                    <a href="/">
+                        <img src="{{url_for('static',filename = 'img/HousefrontBackLogoImg.jpg')}}"  alt="GreenVibe logo" style="width: 1920px; height: 700px; object-fit: cover; object-position: 50% 50%;">
+                    </a>
+                </div>
+            </div>
+        </header>
+        <section id="about" class="about">
+
+            <div class ="container">
+                <table style="margin-left: 500px;margin-right: 150px">
+                    <tr>
+                            <div class="three"><h1>WELCOME TO GREENVIBE</h1></div>
+                    </tr>
+                    <tr>
+                        <td style="width:640px; height:600px;">
+                            <a class="roomRes_link" href="/roomReserve">
+                                <div class="blockImgOne">
+                                    <img  src="{{url_for('static',filename = 'img/imgFirstBtn.jpeg')}}" alt="GreenVibeFirstJpg" style="object-fit: fill; overflow:hidden;position:relative;">
+                                    <div class="blockTextOne">
+                                        <p>Reserve Room</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </td>
+                        <td><div class="vl"></div></td>
+                    </tr>
+                    <tr>
+                        <td style="width:640px; height:600px;">
+                            <a class="contact_link" href="/contact">
+                                <div class="blockImgTwo">
+                                    <img  src="{{url_for('static',filename = 'img/imgSecondBtn.jpg')}}" alt="GreenVibeSecondJpg" style="object-fit: fill; overflow:hidden;position:relative;">
+                                    <div class="blockTextTwo">
+                                         <p>Our contacts</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </td>
+                         <td><div class="vl"></div></td>
+                    </tr>
+                    <tr>
+                        <td style="width:640px; height:600px;">
+                            <a class="about_link" href="/about">
+                                <div class="blockImgThree">
+                                    <img src="{{url_for('static',filename = 'img/imgThirdBtn.jpg')}}" alt="GreenVibeThirdJpg" style="object-fit: fill; overflow:hidden;position:relative;">
+                                    <div class="blockTextThree">
+                                         <p>About hotel "GreenVibe"</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </td>
+                         <td><div class="vl"></div></td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <footer id="footer" class="footer">
+            <table style="width: 1920px;">
+                <tr>
+                    <td colspan="2" >
+                         <div class ="container">
+                                <h3>
+                                    GreenVibe is an Ukrainian hotel
+                                </h3>
+                                <h3>
+                                    © GreenVibe all rights reserved
+                                </h3>
+                                <h3>
+                                    grVibeukr@gmail.com
+                                </h3>
+                        </div>
+                    </td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </footer>
+    </body>
+</html>
