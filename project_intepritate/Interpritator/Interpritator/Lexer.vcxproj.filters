@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="lexer">
+      <UniqueIdentifier>{313cd4cc-0537-4265-877c-f468986e6a28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game">
+      <UniqueIdentifier>{5b1c76b3-81bd-4321-8f6d-167d2702bb7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{aa3fd3e1-199a-4aba-aad7-07b80339e8fb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="enums.cpp">
+      <Filter>lexer</Filter>
+    </ClCompile>
+    <ClCompile Include="file_reader.cpp">
+      <Filter>lexer</Filter>
+    </ClCompile>
+    <ClCompile Include="lexer.cpp">
+      <Filter>lexer</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="robot.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="board.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+    <ClCompile Include="figure.cpp">
+      <Filter>game</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="enums.h">
+      <Filter>lexer</Filter>
+    </ClInclude>
+    <ClInclude Include="file_reader.h">
+      <Filter>lexer</Filter>
+    </ClInclude>
+    <ClInclude Include="lexer.h">
+      <Filter>lexer</Filter>
+    </ClInclude>
+    <ClInclude Include="token.h">
+      <Filter>lexer</Filter>
+    </ClInclude>
+    <ClInclude Include="robot.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="board.h">
+      <Filter>game</Filter>
+    </ClInclude>
+    <ClInclude Include="figure.h">
+      <Filter>game</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="1.txt">
+      <Filter>resources</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

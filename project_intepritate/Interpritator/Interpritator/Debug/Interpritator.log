@@ -1,0 +1,9 @@
+﻿  main.cpp
+C:\Users\Dmytro Shakhray\source\repos\Interpritator\Interpritator\desk.h(48,15): warning C4930: 'std::string Dump(void)': prototyped function not called (was a variable definition intended?)
+  robot.cpp
+  Generating Code...
+C:\Users\Dmytro Shakhray\source\repos\Interpritator\Interpritator\desk.h(108,19): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+file_reader.obj : error LNK2005: "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall eFileReader::GetLine(unsigned int)" (?GetLine@eFileReader@@QAE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@I@Z) already defined in comand.obj
+file_reader.obj : error LNK2005: "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall eFileReader::GetTextFull(void)" (?GetTextFull@eFileReader@@QAE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ) already defined in comand.obj
+file_reader.obj : error LNK2005: "public: void __thiscall eFileReader::ReadFile(void)" (?ReadFile@eFileReader@@QAEXXZ) already defined in comand.obj
+C:\Users\Dmytro Shakhray\source\repos\Interpritator\Debug\Interpritator.exe : fatal error LNK1169: one or more multiply defined symbols found

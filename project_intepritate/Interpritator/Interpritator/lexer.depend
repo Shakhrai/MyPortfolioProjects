@@ -1,0 +1,28 @@
+# depslib dependency file v1.0
+1585996336 source:f:\lexer\enums.cpp
+	"enums.h"
+
+1585996332 f:\lexer\enums.h
+	<string>
+
+1584794792 source:f:\lexer\file_reader.cpp
+	"file_reader.h"
+	<fstream>
+
+1584792482 f:\lexer\file_reader.h
+	<string>
+	<vector>
+	<fstream>
+	<iostream>
+
+1585998803 source:f:\lexer\lexer.cpp
+	"lexer.h"
+	<sstream>
+
+1585998803 f:\lexer\lexer.h
+	<vector>
+	"token.h"
+
+1585996443 f:\lexer\token.h
+	"enums.h"
+
