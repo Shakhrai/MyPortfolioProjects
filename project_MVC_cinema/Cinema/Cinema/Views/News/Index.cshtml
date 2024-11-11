@@ -1,0 +1,42 @@
+﻿@model IQueryable<ServiceItem>
+@{
+    TextField textField = ViewBag.TextField;
+
+    ViewBag.Title = textField.MetaTitle;
+    ViewBag.Description = textField.MetaDescription;
+    ViewBag.Keywords = textField.MetaKeywords;
+}
+
+<div>
+    @if (Model.Any())
+    {
+        <ul class="big-image-list">
+            @foreach (ServiceItem entity in Model)
+            {
+                <li>
+                    <a asp-area="" asp-controller="News" asp-action="Index" asp-route-id="@entity.Id">
+                        <img src="~/images/@entity.TitleImagePath" alt="" class="left" />
+                    </a>
+                    <h4>@entity.Title</h4>
+                    <p>@entity.Subtitle</p>
+                </li>
+            }
+        </ul>
+    }
+</div>
+
+<div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+        this.page.url = 'https://blognews.html';
+    };
+   
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://blognewa.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
