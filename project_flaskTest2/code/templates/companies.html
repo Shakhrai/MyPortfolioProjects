@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Companies</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('documents') }}">Documents</a></li>
+            <li><a href="{{ url_for('companies') }}" class="active">Companies</a></li>
+            <li><a href="{{ url_for('accounting_news') }}">Accounting News</a></li>
+            <!-- Додайте більше пунктів, якщо потрібно -->
+        </ul>
+    </nav>
+
+    <section>
+        <h2>List of Companies</h2>
+        <ul>
+            <!-- Приклад списку компаній (замініть це на реальний код отримання та відображення компаній) -->
+            {% for company in companies_list %}
+                <li><a href="#">{{ company }}</a></li>
+            {% endfor %}
+        </ul>
+
+    <!-- Форма для додавання нової компанії -->
+<form method="post" action="{{ url_for('companies') }}">
+    <label for="company_name">New Company Name:</label>
+    <input type="text" id="company_name" name="company_name" required>
+    <button type="submit">Add Company</button>
+</form>
+
+    </section>
+
+    <footer>
+       <p>&copy;2023 Our Company. All rights reversed . Not a commercial website</p>
+    </footer>
+</body>
+</html>

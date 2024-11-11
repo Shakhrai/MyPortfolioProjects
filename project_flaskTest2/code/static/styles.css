@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* білий фон */
+    color: #daa520; /* нежно золотий текст */
+}
+
+header {
+    background-color: #daa520; /* нежно золотий фон для заголовка */
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+/* styles.css */
+
+
+
+footer {
+     background-color: #f8f8f8; /* Колір футера */
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+/* Інші стилі нижче */
+
+section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.user-section,
+.product-section {
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #daa520; /* нежно золотий фон для заголовків таблиці */
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #daa520; /* нежно золотий фон для кнопок */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav p {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #FFD700;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #FFD700;
+}
+li{
+    padding: 30px;
+}
+/* Додаткові стилі можна додавати за потреби */

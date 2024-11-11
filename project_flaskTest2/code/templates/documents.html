@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Documents</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('documents') }}" class="active">Documents</a></li>
+            <li><a href="{{ url_for('companies') }}">Companies</a></li>
+            <li><a href="{{ url_for('accounting_news') }}">Accounting News</a></li>
+            <!-- Додайте більше пунктів, якщо потрібно -->
+        </ul>
+    </nav>
+
+    <section>
+        <h2>List of Documents</h2>
+
+<ul>
+    <!-- Приклад списку документів (замініть це на реальний код отримання та відображення документів) -->
+    {% for document in documents_list %}
+        <li><a href="#">{{ document }}</a></li>
+    {% endfor %}
+</ul>
+
+<!-- Форма для додавання нового документу -->
+<form method="post" action="{{ url_for('documents') }}">
+    <label for="document_title">New Document Title:</label>
+    <input type="text" id="document_title" name="document_title" required>
+    <button type="submit">Add Document</button>
+</form>
+
+    </section>
+
+    <footer>
+        <p>&copy;2023 Our Company. All rights reversed . Not a commercial website</p>
+    </footer>
+</body>
+</html>

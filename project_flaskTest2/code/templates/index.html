@@ -1,0 +1,34 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookkeeping System</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to the Bookkeeping System!</h1>
+    <nav>
+    {% if 'user_id' in session %}
+        <p>
+            <a href="{{ url_for('dashboard') }}">Dashboard</a> |
+            <a href="{{ url_for('documents') }}">Documents</a> |
+            <a href="{{ url_for('companies') }}">Companies</a> |
+            <a href="{{ url_for('accounting_news') }}">Accounting News</a> |
+            <a href="{{ url_for('logout') }}">Logout</a>
+        </p>
+    {% else %}
+        <p>
+            <a href="{{ url_for('login') }}">Login</a> or
+            <a href="{{ url_for('register') }}">Register</a>
+        </p>
+    {% endif %}
+    </nav>
+    <section >
+        <p><h1>Welcome to the Bookkeeping System!<br>This is a test system developed by Dmitro Shakhrai, IN-403.</h1></p>
+
+    </section>
+    <footer><p>&copy;2023 Our Company. All rights reversed . Not a commercial website</p></footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Dashboard</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}" class="active">Dashboard</a></li>
+            <li><a href="{{ url_for('documents') }}">Documents</a></li>
+            <li><a href="{{ url_for('companies') }}">Companies</a></li>
+            <li><a href="{{ url_for('accounting_news') }}">Accounting News</a></li>
+            <!-- Додайте більше пунктів, якщо потрібно -->
+        </ul>
+    </nav>
+
+
+
+
+
+<section>
+    <h3>Your Documents</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Document ID</th>
+                <th>Title</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Приклад виведення інформації про документи -->
+            {% for document in documents_list %}
+                <tr>
+                    <td>{{ loop.index }}</td>
+                    <td>{{ document }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Форма для додавання нового документу -->
+    <form method="post" action="{{ url_for('documents') }}">
+        <label for="document_title">New Document Title:</label>
+        <input type="text" id="document_title" name="document_title" required>
+        <button type="submit">Add Document</button>
+    </form>
+</section>
+
+<section>
+    <h3>Your Companies</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Company ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Приклад виведення інформації про компанії -->
+            {% for company in companies_list %}
+                <tr>
+                    <td>{{ loop.index}}</td>
+                    <td>{{ company }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Форма для додавання нової компанії -->
+    <form method="post" action="{{ url_for('companies') }}">
+        <label for="company_name">New Company Name:</label>
+        <input type="text" id="company_name" name="company_name" required>
+        <button type="submit">Add Company</button>
+    </form>
+</section>
+
+    </section>
+
+    <footer>
+        <p>&copy;2023 Our Company. All rights reversed . Not a commercial website</p>
+    </footer>
+</body>
+</html>

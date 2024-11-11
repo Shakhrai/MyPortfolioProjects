@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accounting News</title>
+     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <header>
+        <h1>Accounting News</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            <li><a href="{{ url_for('documents') }}">Documents</a></li>
+            <li><a href="{{ url_for('companies') }}">Companies</a></li>
+            <li><a href="{{ url_for('accounting_news') }}" class="active">Accounting News</a></li>
+            <!-- Додайте більше пунктів, якщо потрібно -->
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Accounting News</h2>
+        <ul>
+            <!-- Приклад списку новин бухгалтерії (замініть це на реальний код отримання та відображення новин) -->
+            {% for news_item in news_list %}
+                <li><a href="#">{{ news_item }}</a></li>
+            {% endfor %}
+        </ul>
+    <!-- Форма для додавання нової новини -->
+<form method="post" action="{{ url_for('accounting_news') }}">
+    <label for="news_title">New News Title:</label>
+    <input type="text" id="news_title" name="news_title" required>
+    <button type="submit">Add News</button>
+</form>
+
+    </section>
+
+    <footer>
+      <p>&copy;2023 Our Company. All rights reversed . Not a commercial website</p>
+    </footer>
+</body>
+</html>
